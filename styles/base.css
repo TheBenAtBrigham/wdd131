@@ -1,0 +1,163 @@
+:root {
+  --header-color: navy; 
+  --other-header-color: #333;
+  --text-color: #000000;    /* Main body text color */
+  --background-color: #ffffff; /* Page background color */
+  --border-color: rgb(157, 154, 154);
+  --header-one: "Atkinson Hyperlegible Mono", sans-serif;
+  --nice-font-there: "Yuji Boku", serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+header {
+    font-family: var(--header-font);
+}
+
+header h3, footer {
+    text-align: center;
+    padding: 15px;
+    background: var(--header-color);
+    color: white;
+    
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    background-color: var(--other-header-color);
+    align-items: center;
+    
+}
+header ul li{
+    flex: 1 1 auto;
+}
+header ul li:hover{
+    background-color: white;
+    color: var(--other-header-color);
+}
+header ul li:hover a{
+    color: var(--other-header-color);
+}
+header li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.75rem;
+    color: white;
+}
+main {
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 30px;
+}
+main h1
+{
+    text-align: center;
+    grid-column: 1/-1;
+}
+.main, .aside{
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    
+    margin: 10px;
+}
+
+.main h3, .aside h3{
+    border-radius: 5px 5px 0px 0px;
+    background-color: var(--header-color);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px; 
+}
+
+.my-bio {
+  padding-left: 20px;  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.country-state.bio{
+    padding-left: 20px;  
+}
+
+.bio-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.photo {
+    padding: 20px;
+}
+
+.bio-picture {
+    
+    width: auto;
+    height: 150px;
+    border: solid 1px var(--border-color);
+}
+h4 {
+    text-align: center;
+}
+hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.country {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 20px;
+}
+
+.flags{
+    position: relative;
+    padding-right: 165px;
+}
+
+.flags img
+{
+    width: auto;
+    position: absolute;
+    border: 1px solid var(--border-color);
+    height:80px;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.second-flag
+{
+    transform: translate(7%, 0%)
+}
+
+.flags:hover .first-flag
+{
+    opacity: 0;
+}
+
+.resources {
+    text-align: center;
+    
+}
+
+.resources ul{
+    display: inline-block;
+    text-align: left;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#lastModified { 
+    color: yellow;
+
+}
+
+
+

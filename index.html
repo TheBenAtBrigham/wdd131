@@ -3,9 +3,70 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 131</title>
+        <meta name="author" content="Asa Benson">
+        <meta name="description" content="DD 131: Dynamic Web Fundamentals - Asa Benson: This is my index page for WWD 131 and contains some of my information.">
+        <link rel="stylesheet" href="styles/base.css">
+
+
+        <script src="scripts/getdate.js" defer></script>
+        <title>WDD 131: Dynamic Web Fundamentals - Asa Benson</title>
     </head>
     <body>
-        <h1>WDD 131 - Blazzard</h1>
+        <header>
+            <h3>WDD 131: Dynamic Web Fundamentals</h3>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/asa-benson">Linkedin</a></li>
+                    <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/1-thes/5?lang=eng&id=p21#p21">Scriptures</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Asa Benson</h1>
+            <div class="main">
+                <h3>About Me</h3>
+                <div class="bio-wrapper">
+                    <div id="bio">
+                        <p class="my-bio">My name is Asa. I was born in Northern Utah and currently am working towards making my first video games. My life is all over place and now I want to travel. I also like to learn about the world and like learning how to speak Japanese and sometimes other languages.</p>
+                        <h4>State of Utah, United States of America</h4>
+                        <hr/>
+                        <div class="country">
+                            <div class="flags">
+                                <img class="second-flag" src="images/utah.png" alt="ユタ州はアメリカにあります">
+                                <img class="first-flag" src="images/beikoku.png" alt="アメリカは米国です" > 
+                            </div>
+                            <p>
+                                The United States is amongst one of the biggest countries of the world, which spans much of Northern America similar to its neighbor Canada to the north, which is the second biggest country in the world. The United States is also transcontinental as the State of Hawaii is located in Oceania.
+                                <br><br>
+                                Amongst the the diversity of land and people is the State of Utah, which itself is diverse in enviroment, in large desert with vast mountains, rock formations and bodies of waters that are majestic to gaze upon.
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img class="bio-picture" src="images/lastbird.JPG" alt="..." > 
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="aside">
+                <h3>Web Dev Resources</h3>
+                <div class="resources">
+                <ul>
+                    <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                    <li><a href="https://stackoverflow.com/questions">Stack Overflow</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer</a></li>
+                </ul>
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"></span> Asa Benson</p>
+            <p><span id="lastModified"></span></p>
+        </footer>
     </body>
 </html>
