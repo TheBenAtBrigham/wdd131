@@ -1,29 +1,29 @@
 :root {
   --header-color: navy; 
   --other-header-color: #333;
-  --text-color: #000000;    /* Main body text color */
+  --text-color: #333;    /* Main body text color */
   --background-color: #ffffff; /* Page background color */
   --border-color: rgb(157, 154, 154);
-  --header-one: "Atkinson Hyperlegible Mono", sans-serif;
+  --header-font: "Quicksand", sans-serif;
+  --standard-font: "Mulish", sans-serif;
+  --nav-font: "Source Code Pro", monospace;
   --nice-font-there: "Yuji Boku", serif;
 }
 
 * {
 	margin: 0;
 	padding: 0;
-
+    font-family: var(--standard-font);
 }
 
-header {
-    font-family: var(--header-font);
-}
+
 
 header h3, footer {
     text-align: center;
     padding: 15px;
     background: var(--header-color);
     color: white;
-    
+    font-family: var(--header-font);
 }
 
 header ul {
@@ -32,7 +32,6 @@ header ul {
     flex-wrap: wrap;
     background-color: var(--other-header-color);
     align-items: center;
-    
 }
 header ul li{
     flex: 1 1 auto;
@@ -50,12 +49,14 @@ header li a{
     text-align: center;
     padding: 0.75rem;
     color: white;
+    font-family: var(--nav-font);
 }
 main {
 
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 30px;
+    color: var(--text-color);
 }
 main h1
 {
@@ -69,8 +70,15 @@ main h1
     margin: 10px;
 }
 
-.main h3, .aside h3{
-    border-radius: 5px 5px 0px 0px;
+.card{
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    
+    margin: 10px;
+}
+
+.card h2{
+    border-radius: 4px 4px 0px 0px;
     background-color: var(--header-color);
     text-align: center;
     color: white;
@@ -102,7 +110,7 @@ main h1
     height: 150px;
     border: solid 1px var(--border-color);
 }
-h4 {
+h3 {
     text-align: center;
 }
 hr {
@@ -156,7 +164,7 @@ hr {
 
 #lastModified { 
     color: yellow;
-
+    font-size: 12px;
 }
 
 

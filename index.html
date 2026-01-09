@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="scripts/getdate.js" defer></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Asa Benson">
         <meta name="description" content="DD 131: Dynamic Web Fundamentals - Asa Benson: This is my index page for WWD 131 and contains some of my information.">
         <link rel="stylesheet" href="styles/base.css">
-
-
-        <script src="scripts/getdate.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Yuji+Boku&display=swap" rel="stylesheet">
         <title>WDD 131: Dynamic Web Fundamentals - Asa Benson</title>
     </head>
     <body>
         <header>
-            <h3>WDD 131: Dynamic Web Fundamentals</h3>
+            <h3> <span id="course-title">WDD 131: Dynamic Web Fundamentals</span></h3>
             <nav>
                 <ul>
                     <li><a href="https://www.linkedin.com/in/asa-benson">Linkedin</a></li>
@@ -25,13 +26,13 @@
         </header>
         <main>
             <h1>Asa Benson</h1>
-            <div class="main">
-                <h3>About Me</h3>
+            <section class="card">
+                <h2>About Me</h2>
                 <div class="bio-wrapper">
                     <div id="bio">
                         <p class="my-bio">My name is Asa. I was born in Northern Utah and currently am working towards making my first video games. My life is all over place and now I want to travel. I also like to learn about the world and like learning how to speak Japanese and sometimes other languages.</p>
-                        <h4>State of Utah, United States of America</h4>
-                        <hr/>
+                        <h3>State of Utah, United States of America</h3>
+                        <hr>
                         <div class="country">
                             <div class="flags">
                                 <img class="second-flag" src="images/utah.png" alt="ユタ州はアメリカにあります">
@@ -40,7 +41,7 @@
                             <p>
                                 The United States is amongst one of the biggest countries of the world, which spans much of Northern America similar to its neighbor Canada to the north, which is the second biggest country in the world. The United States is also transcontinental as the State of Hawaii is located in Oceania.
                                 <br><br>
-                                Amongst the the diversity of land and people is the State of Utah, which itself is diverse in enviroment, in large desert with vast mountains, rock formations and bodies of waters that are majestic to gaze upon.
+                                Amongst the the diversity of land and people of the U.S. is the State of Utah, which itself is diverse in enviroment, in large desert with vast mountains, rock formations and bodies of waters that are majestic to gaze upon.
                             </p>
                             
                         </div>
@@ -50,10 +51,9 @@
                     </div>
                     
                 </div>
-                
-            </div>
-            <div class="aside">
-                <h3>Web Dev Resources</h3>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
                 <div class="resources">
                 <ul>
                     <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
@@ -62,7 +62,7 @@
                 </ul>
 
                 </div>
-            </div>
+            </section>
         </main>
         <footer>
             <p>&copy;<span id="currentyear"></span> Asa Benson</p>

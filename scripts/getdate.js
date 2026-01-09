@@ -2,8 +2,7 @@
 const today = new Date();
 
 const currentYear = document.querySelector("#currentyear");
-const lastModified = document.querySelector("#lastModified");
-
 currentYear.innerHTML = `${today.getFullYear()}`;
-lastModified.innerHTML = `${today}`;
+document.getElementById("lastModified").innerHTML = `Last Modification: ${document.lastModified}`;
+
 
