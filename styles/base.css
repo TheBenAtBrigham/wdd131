@@ -16,7 +16,9 @@
     font-family: var(--standard-font);
 }
 
-
+header {
+    color: white;
+}
 
 header h3, footer {
     text-align: center;
@@ -61,6 +63,7 @@ main {
 main h1
 {
     text-align: center;
+ 
     grid-column: 1/-1;
 }
 .main, .aside{
@@ -162,10 +165,11 @@ hr {
     padding-top: 20px;
 }
 
+li::marker {
+  color: var(--text-color);
+}
+
 #lastModified { 
     color: yellow;
     font-size: 12px;
 }
-
-
-
