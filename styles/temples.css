@@ -46,7 +46,7 @@ header p {
 }
 
 
-nav ul {
+header ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
@@ -79,9 +79,6 @@ header li a{
     padding: 0.75rem;
     color: white;
     font-family: var(--nav-font);
-}
-header ul li {
-    padding: 0;
 }
 main {
 
