@@ -1,19 +1,8 @@
-:root {
-  --header-color: navy; 
-  --other-header-color: #333;
-  --text-color: #333;    /* Main body text color */
-  --background-color: #ffffff; /* Page background color */
-  --border-color: rgb(157, 154, 154);
-  --header-font: "Quicksand", sans-serif;
-  --standard-font: "Mulish", sans-serif;
-  --nav-font: "Source Code Pro", monospace;
-  --nice-font-there: "Yuji Boku", serif;
-}
+
 
 @media screen and (min-width: 660px) {
   header {
-    background-color: var(--header-color);
-    color: #fff;
+    background-color: navy;
     display: flex;
     justify-content: space-between;
   }
@@ -23,7 +12,6 @@
   header ul {
     list-style: none;
     flex-direction: row;
-    background-color: var(--header-color);
     
     justify-content: flex-end;
   }
@@ -35,7 +23,7 @@
   }
 
   main {
-    grid-template-columns: 1fr 1fr;
+
     max-width: 800px;
     margin: 0 auto;
   }

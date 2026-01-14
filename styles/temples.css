@@ -19,6 +19,7 @@
 header {
     margin: 0;
     display: grid;
+    color: var(--background-color);
 }
 #menu{
     font-size: 1.5rem;
@@ -32,7 +33,7 @@ header {
 #menu::before {content: "☰";}
 #menu.open::before{content: "X";}
 
-header h1, footer {
+header p, footer {
     
     
     background: var(--header-color);
@@ -40,10 +41,11 @@ header h1, footer {
     font-family: var(--header-font);
 }
 
-header h1 {
+header p {
     float: left;
     padding: 25px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 
@@ -109,35 +111,7 @@ section{
     grid-gap: 65px;
 }
 
-.card{
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    
-    margin: 10px;
-}
 
-.card h2{
-    border-radius: 4px 4px 0px 0px;
-    background-color: var(--header-color);
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    padding: 10px; 
-}
-
-.my-bio {
-  padding-left: 20px;  
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.country-state.bio{
-    padding-left: 20px;  
-}
-
-.bio-wrapper {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
 
 
 
@@ -150,6 +124,7 @@ section{
 }
 figcaption {
     text-align: center;
+    color: var(--text-color);
 }
 h3 {
     text-align: center;
@@ -166,46 +141,6 @@ hr {
     padding: 20px;
 }
 
-.flags{
-    position: relative;
-    padding-right: 165px;
-}
-
-.flags img
-{
-    width: auto;
-    position: absolute;
-    border: 1px solid var(--border-color);
-    height:80px;
-    object-fit: cover;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.second-flag
-{
-    transform: translate(7%, 0%)
-}
-
-.flags:hover .first-flag
-{
-    opacity: 0;
-}
-
-.resources {
-    text-align: center;
-    
-}
-
-.resources ul{
-    display: inline-block;
-    text-align: left;
-    align-items: center;
-    padding-top: 20px;
-}
-
-li::marker {
-  color: var(--text-color);
-}
 
 footer {
     text-align: center;
