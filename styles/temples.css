@@ -35,7 +35,6 @@ header {
 
 header p, footer {
     background: var(--header-color);
-    color: white;
     font-family: var(--header-font);
 }
 
@@ -60,7 +59,6 @@ nav ul {
 
 header ul li{
     display: none;
-
     text-align: center;
 }
 
@@ -71,7 +69,6 @@ header ul li{
 
 header ul li:hover{
     background-color: white;
-    color: var(--other-header-color);
 }
 header ul li:hover a{
     color: var(--other-header-color);
@@ -138,6 +135,7 @@ hr {
 footer {
     text-align: center;
     padding: 15px;
+    color: white;
 }
 
 #lastModified { 
