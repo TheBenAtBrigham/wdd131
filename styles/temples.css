@@ -1,0 +1,218 @@
+:root {
+  --header-color: navy; 
+  --other-header-color: #333;
+  --text-color: #333;    /* Main body text color */
+  --background-color: #ffffff; /* Page background color */
+  --border-color: rgb(157, 154, 154);
+  --header-font: "Quicksand", sans-serif;
+  --standard-font: "Mulish", sans-serif;
+  --nav-font: "Source Code Pro", monospace;
+  --nice-font-there: "Yuji Boku", serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+    font-family: var(--standard-font);
+}
+
+header {
+    margin: 0;
+    display: grid;
+}
+#menu{
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    right: 1rem;
+    top: 0.6rem;
+    color: var(--background-color);
+}
+#menu::before {content: "☰";}
+#menu.open::before{content: "X";}
+
+header h1, footer {
+    
+    
+    background: var(--header-color);
+    color: white;
+    font-family: var(--header-font);
+}
+
+header h1 {
+    float: left;
+    padding: 25px;
+    font-size: 20px;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: var(--header-color);
+    align-items: stretch;
+    padding: 0;
+}
+
+header ul li{
+    display: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+.open li {
+    display: block;
+}
+
+
+header ul li:hover{
+    background-color: white;
+    color: var(--other-header-color);
+}
+header ul li:hover a{
+    color: var(--other-header-color);
+}
+header li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.75rem;
+    color: white;
+    font-family: var(--nav-font);
+}
+header ul li {
+    padding: 0;
+}
+main {
+
+    padding: 30px;
+    color: var(--text-color);
+}
+main h1
+{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+section{
+    padding: 0.5rem;
+    margin: 1rem auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    grid-gap: 65px;
+}
+
+.card{
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    
+    margin: 10px;
+}
+
+.card h2{
+    border-radius: 4px 4px 0px 0px;
+    background-color: var(--header-color);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px; 
+}
+
+.my-bio {
+  padding-left: 20px;  
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.country-state.bio{
+    padding-left: 20px;  
+}
+
+.bio-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+
+
+.temple {
+    
+    width: auto;
+    height: 180px;
+    
+    border: solid 1px var(--border-color);
+}
+figcaption {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.country {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 20px;
+}
+
+.flags{
+    position: relative;
+    padding-right: 165px;
+}
+
+.flags img
+{
+    width: auto;
+    position: absolute;
+    border: 1px solid var(--border-color);
+    height:80px;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.second-flag
+{
+    transform: translate(7%, 0%)
+}
+
+.flags:hover .first-flag
+{
+    opacity: 0;
+}
+
+.resources {
+    text-align: center;
+    
+}
+
+.resources ul{
+    display: inline-block;
+    text-align: left;
+    align-items: center;
+    padding-top: 20px;
+}
+
+li::marker {
+  color: var(--text-color);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+#lastModified { 
+    color: yellow;
+    font-size: 12px;
+}
