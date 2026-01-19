@@ -1,8 +1,8 @@
 :root {
  /* Main body text color */
   --white-sky: #ffffff; /* Page background color */
-  --sun-red: #84011f;
-  --gold: #f9bc02;
+  --sun-red: #a60127;
+
   --header-font: "Quicksand", sans-serif;
   --standard-font: "Mulish", sans-serif;
   --nav-font: "Source Code Pro", monospace;
@@ -92,7 +92,7 @@ footer{
     text-align: center;
     padding: 10px;
     background: var(--sun-red);
-    color: var(--gold);
+    color: var(--white-sky);
 }
 
 #ikitai {
@@ -149,7 +149,7 @@ footer{
     }
     section h2 {
         background: var(--sun-red);
-        color: var(--gold);
+        color: var(--white-sky);
         
     }
     
