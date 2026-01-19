@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="scripts/place.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Asa Benson">
+    <meta name="description" content="WDD 131: Dynamic Web Fundamentals - Asa Benson: This is my country page assignment.">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Yuji+Boku&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/fuji.webp" media="(min-width: 1000px)">
+                <source srcset="images/kyouto.webp" media="(min-width: 500px)">
+                <img src="images/kyouto.webp" alt="日本の写真">
+            </picture>
+        </div>
+        <div class="sections">
+            <section class="data">
+            <h2>Data</h2>
+            <div>
+                <table>
+                    <tr>
+                        <th>Area:</th>
+                        <td>377,975 sq km</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>123,360,000</td>
+                    </tr>
+                    <tr>
+                        <th>Capital:</th>
+                        <td>Tokyo</td>
+                    </tr>
+                    <tr>
+                        <th>Languages:</th>
+                        <td>Japanese, Ainu, Ryukyuan Languages, and Hachijō</td>
+                    </tr>
+                    <tr>
+                        <th>Currency: </th>
+                        <td>Japanese Yen</td>
+                    </tr>
+                    <tr>
+                        <th>Time Zone: </th>
+                        <td>UTC+9</td>
+                    </tr>
+                    <tr>
+                        <th>Calling Code: </th>
+                        <td>+81</td>
+                    </tr>
+                    <tr>
+                        <th>Internet TLD: </th>
+                        <td>.jp</td>
+                    </tr>
+                </table>
+            </div>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <div class="weather-container">
+                <img src="images/tenki.svg" alt="曇り空の日の丸">
+                </div>
+                <div>
+                <table>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td><span id="temperature"></td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td><span id="conditions"></td>
+                    </tr>
+                    <tr>
+                        <th>Wind: </th>
+                        <td><span id="wind"></td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill: </th>
+                        <td><span id="wind-chill"></span></td>
+                    </tr>
+                </table>
+            </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Asa Benson </p>
+        <p><span id="lastModified"></span><br><span id="ikitai">日本に行きたいです。</span></p>
+    </footer>
+</body>
+</html>

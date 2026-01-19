@@ -1,0 +1,145 @@
+:root {
+ /* Main body text color */
+  --white-sky: #ffffff; /* Page background color */
+  --sun-red: #bd002c;
+  --gold: #dca600;
+  --header-font: "Quicksand", sans-serif;
+  --standard-font: "Mulish", sans-serif;
+  --nav-font: "Source Code Pro", monospace;
+  --nice-font-there: "Yuji Boku", serif;
+}
+* {
+	margin: 0;
+	padding: 0;
+    font-family: var(--standard-font);
+}
+body {
+    background-color: var(--sun-red);
+}
+
+
+
+header {
+    color: var(--sun-red);
+    background-color: var(--white-sky);
+    text-align: center;
+    padding: 20px;
+}
+.hero {
+    display: grid;
+}
+
+.hero img {
+  width: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+}
+.sections  {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+section {
+    grid-column: 1/1;
+    background-color: var(--white-sky);
+    padding: 20px;
+    margin-bottom: 1px;
+    color: var(--sun-red);
+    font-size: 20px;
+}
+section h2{
+    
+    text-align: center;
+}
+
+.weather-container {
+    display: flex;
+    justify-content: center;
+}
+
+section img{
+    width: 75px;
+    padding-top: 15px;
+    height: auto;
+    display: block;
+    align-self: center;
+}
+
+section div {
+    display: grid;
+    justify-items: center;
+}
+
+table {
+    padding: 20px;
+    table-layout: fixed;
+    min-width: 50%;
+
+}
+th, td{
+    padding-right: 20px;
+    padding-left: 20px;
+   
+}
+tr{
+    padding-bottom: 15px;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background: var(--sun-red);
+    color: var(--gold);
+}
+
+#ikitai {
+    font-family: var(--nice-font-there);
+}
+
+@media screen and (min-width: 600px) { 
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .hero, .sections{
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+    .sections {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+    }
+    
+
+    section {
+        margin: 30px;
+        padding: 0px;
+        width: fit-content;
+ 
+    }
+
+    
+    .weather {
+        align-self: flex-end;
+        margin-top: 1; 
+        width: 30%;
+    }
+    .data {
+        align-self: flex-start;
+        margin-top: 1; 
+        width: 40%;
+    }
+    section {
+        opacity: 0.75;
+        
+        font-size: 13px;
+    }
+    section h2 {
+        background: var(--sun-red);
+        color: var(--gold);
+        
+    }
+    
+}
