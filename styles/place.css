@@ -1,8 +1,8 @@
 :root {
  /* Main body text color */
   --white-sky: #ffffff; /* Page background color */
-  --sun-red: #bd002c;
-  --gold: #dca600;
+  --sun-red: #940023;
+  --gold: #e9af00;
   --header-font: "Quicksand", sans-serif;
   --standard-font: "Mulish", sans-serif;
   --nav-font: "Source Code Pro", monospace;
@@ -129,7 +129,7 @@ footer{
         align-self: flex-end;
         width: 30%;
     }
-    .weather h2::after, .weather h2::before {
+    .weather h2 ::before, .weather h2 ::after {
         content: " ⛅ ";
     }
     .data {
