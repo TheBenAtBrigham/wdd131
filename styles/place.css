@@ -16,6 +16,10 @@
 body {
     background-color: var(--sun-red);
 }
+h1, h2 {
+
+    font-family: var(--header-font);
+}
 
 
 
@@ -119,18 +123,25 @@ footer{
         width: fit-content;
  
     }
-
+    
     
     .weather {
         align-self: flex-end;
-        margin-top: 1; 
         width: 30%;
+    }
+    .weather h2::after, .weather h2::before {
+        content: " ⛅ ";
     }
     .data {
         align-self: flex-start;
-        margin-top: 1; 
         width: 40%;
     }
+    .weather img
+    {
+        display: none;
+    }
+
+
     section {
         opacity: 0.75;
         
