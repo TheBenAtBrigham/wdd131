@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy load pls</title>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        img {
+            background: #000;
+            animation: fade 15s;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <picture>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/House_of_Soviets_%2842912066861%29.jpg/960px-House_of_Soviets_%2842912066861%29.jpg" alt="lazy test 1" loading="lazy">
+        </picture>
+        <picture>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/House_of_Soviets_%2842912066861%29.jpg/960px-House_of_Soviets_%2842912066861%29.jpg" alt="lazy test 1" loading="lazy">
+        </picture>
+        <picture>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/House_of_Soviets_%2842912066861%29.jpg/960px-House_of_Soviets_%2842912066861%29.jpg" alt="lazy test 1" loading="lazy">
+        </picture>
+    </main>
+</body>
+</html>

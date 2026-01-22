@@ -1,0 +1,165 @@
+:root {
+  --header-color: navy; 
+  --other-header-color: #333;
+  --text-color: #333;    /* Main body text color */
+  --background-color: #ffffff; /* Page background color */
+  --border-color: rgb(157, 154, 154);
+  --header-font: "Quicksand", sans-serif;
+  --standard-font: "Mulish", sans-serif;
+  --nav-font: "Source Code Pro", monospace;
+  --nice-font-there: "Yuji Boku", serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+    font-family: var(--standard-font);
+}
+
+header {
+    margin: 0;
+    display: grid;
+    color: var(--background-color);
+}
+#menu{
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    right: 1rem;
+    top: 0.6rem;
+    color: var(--background-color);
+}
+#menu::before {content: "☰";}
+#menu.open::before{content: "X";}
+
+header p, footer {
+    background: var(--header-color);
+    font-family: var(--header-font);
+}
+
+header p {
+    float: left;
+    padding: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: var(--header-color);
+    color: white;
+    align-items: stretch;
+    padding: 0;
+}
+
+header ul li {
+    display: none;
+    text-align: center;
+}
+
+.open li {
+    display: inline-block;
+}
+
+
+header ul li:hover{
+    background-color: white;
+}
+header ul li:hover a{
+    color: var(--other-header-color);
+}
+header li a{
+    display: block;
+    text-decoration: none;
+    padding: 0.75rem;
+    color: white;
+    font-family: var(--nav-font);
+}
+main {
+    padding: 30px;
+    color: var(--text-color);
+    min-height: 26rem;
+}
+main h1
+{
+    text-align: center;
+}
+
+
+
+.container {
+    padding: 0.5rem;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    grid-gap: 50px;
+    
+}
+
+
+.card {
+    border: 2px solid var(--border-color);
+    padding: 20px;
+    text-align: center;
+    height: 15rem;
+}
+.card h2 {
+    font-size: 20px;
+}
+.card p{
+    font-size: 13px;
+}
+
+img {
+    
+    width: 200px;
+    height: auto;
+    margin: 5px;
+    border: solid 1px var(--border-color);
+    animation: fade 15s;
+
+}
+.label {
+    font-weight: bold;
+    color: var(--header-color);
+    
+}
+
+
+hr {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.country {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+#lastModified { 
+    color: yellow;
+    font-size: 12px;
+}
+
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
