@@ -130,9 +130,13 @@ footer{
         align-self: flex-end;
         width: 30%;
     }
-    #tenki::before, #tenki::after {
-        content: ' ☁︎ ';
-        
+    #tenki::after {
+        font-family: var(--nice-font-there);
+        content: ' 雨 ';
+    }
+    #tenki::before {
+        font-family: var(--nice-font-there);
+        content: ' 曇 ';
     }
     .data {
         align-self: flex-start;
