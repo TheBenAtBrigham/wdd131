@@ -1,0 +1,122 @@
+:root {
+    --sakura: #FFB7C5;
+    --custard: #ECE4B7;
+    --aqua: #7DCFB6;
+    --onyx: #121619;
+    --white: #FFFFFF;
+    --header-font: "Quicksand", sans-serif;
+    --standard-font: "Mulish", sans-serif;
+    --nav-font: "Source Code Pro", monospace;
+    --japanese: "Yuji Boku", serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+    color: var(--onyx);
+    font-family: var(--standard-font);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--onyx);
+    color: var(--custard);
+}
+
+header, footer{
+    background-color: var(--sakura);
+    
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+section {
+    text-align: center;
+    
+    padding-bottom: 10px;
+}
+
+.section-one {
+    background-color: var(--aqua);
+}
+
+div {
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    padding: 20px;   
+
+}
+
+table, th, td{
+    border: solid 2px var(--onyx);
+}
+
+th, td {
+    padding: 5px;
+    background-color: var(--custard);
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+    color: var(--onyx);
+
+}
+
+
+#pink {
+    background-color: var(--sakura);
+}
+#blue {
+    background-color: var(--aqua);
+}
+#cream {
+    background-color: var(--custard);
+}
+#black {
+    background-color: var(--onyx);
+}
+#white {
+    background-color: var(--white);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.quicksand {
+    font-family: var(--header-font);
+}
+
+.mulish {
+    font-family: var(--standard-font);
+}
+ 
+.scp {
+    font-family: var(--nav-font);
+}
+
+.japanese {
+    font-family: var(--japanese);
+}
+
+
+.logo {
+    height: 100px;
+    width: auto;
+}
+.wireframe {
+    height: auto;
+    width: 250px;
+}
+
+footer {
+    text-align: center;
+    
+}
