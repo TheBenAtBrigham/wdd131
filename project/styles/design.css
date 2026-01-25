@@ -31,6 +31,9 @@ header, footer{
 h1 {
     font-size: 2rem;
 }
+h1, h2{
+    font-family: var(--header-font);
+}
 
 section {
     text-align: center;
