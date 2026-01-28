@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Yuji+Boku&display=swap" rel="stylesheet">
-    <title>Form</title>
+    <title>Product Review</title>
 </head>
 <body>
     <header>
@@ -19,7 +19,7 @@
     <main>
         <form method="get" action="review.html">
             <label for="product-name">Product Name</label>
-            <select name="products" id="product-name" >
+            <select name="products" id="product-name" required>
                 <option value="" disabled selected>Choose a Product...</option>
             </select>
             
@@ -49,11 +49,11 @@
                 <input type="checkbox" id="design" name="designing" value="design"><label for="design">Design</label>
             </div>
 
-            <legend>Written review (optional)</legend>
+            <label for="review">Written review (optional)</label>
             <textarea name="written-review" id="review"></textarea>
 
             <label for="name">Type your name (optional)</label>
-            <input type="input" name="name-here" id="name" placeholder="Type your name here" autocomplete="on">
+            <input type="text" name="name-here" id="name" placeholder="Type your name here" autocomplete="on">
 
             <button id="submit" type="submit">Submit</button>
 
