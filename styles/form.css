@@ -41,8 +41,9 @@ label, select {
     display: block;
 }
 
-label, legend {
+label, h2 {
     font-family: var(--header-font);
+    font-weight: normal;
     font-size: 16px;
     padding-top: 10px;
 }
