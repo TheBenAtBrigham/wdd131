@@ -1,0 +1,42 @@
+:root {
+    --background: #c3aed0;
+    --header: #4e1c77;
+    --white: #FFFFFF;
+    --header-font: "Quicksand", sans-serif;
+    --standard-font: "Mulish", sans-serif;
+    --nav-font: "Source Code Pro", monospace;
+    --japanese: "Yuji Boku", serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+    color: black;
+    font-family: var(--standard-font);
+    text-decoration: none;
+}
+
+header, footer
+{
+    background: var(--header);
+    text-align: center;
+    padding: 10px;
+}
+h1, footer p, footer span{
+    color: var(--white);
+}
+
+a {
+    font-family: var(--japanese);
+}
+
+main {
+    min-height: 490px;
+}
+
+#review-form{
+    background: var(--background);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
