@@ -40,12 +40,13 @@ label, select {
     display: block;
 }
 
-label, h2 {
+label, h2{
     font-family: var(--header-font);
     font-weight: normal;
     font-size: 16px;
     padding-top: 10px;
 }
+
 
 select{
     padding: 5px;
@@ -103,12 +104,14 @@ input:focus-visible + label {
 
 .check {
     display: flex;
+    padding: 10px;
 }
 
 .check label{
     padding-top: 0px;
-    padding-left: 5px;
+    padding-left: 7px;
 }
+
 
 textarea {
     width: 100%;
