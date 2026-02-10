@@ -76,6 +76,7 @@ input[type="radio"] {
 	display: flex;
 	align-items: center;
 	caret-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 .stars > label:hover {
@@ -85,9 +86,6 @@ input[type="radio"] {
 	content: "\2606";
 }
 
-.stars > label {
-	cursor: pointer;
-}
 
 input:focus-visible + label {
 	outline: 2px solid #000;
