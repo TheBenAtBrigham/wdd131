@@ -11,7 +11,6 @@
 * {
 	margin: 0;
 	padding: 0;
-    color: black;
     font-family: var(--standard-font);
     text-decoration: none;
 }
@@ -83,6 +82,15 @@ input[type="radio"] {
 }
 .stars > label::before {
 	content: "\2606";
+}
+
+.stars > label {
+	cursor: pointer;
+}
+
+input:focus-visible + label {
+	outline: 2px solid #000;
+	outline-offset: 4px;
 }
 
 .stars input:checked ~ label::before {

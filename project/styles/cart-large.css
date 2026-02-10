@@ -1,0 +1,25 @@
+@media screen and (min-width: 660px) {
+    header {
+        height: 100px;
+        justify-content: space-between; 
+        display: flex;
+    }
+    header div {
+        filter: invert(100%);
+    }
+
+    header div:hover {
+        filter: invert(0%);
+    }
+    
+    .logo {
+        height: 100px;
+        width: auto;
+        top: 0
+    }   
+
+    .social-media img{
+        width: 20px;
+        padding: 3px;
+    }   
+}

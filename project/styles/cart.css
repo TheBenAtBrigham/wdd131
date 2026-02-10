@@ -1,0 +1,213 @@
+:root {
+    --sakura: #FFB7C5;
+    --custard: #ECE4B7;
+    --aqua: #7DCFB6;
+    --onyx: #121619;
+    --white: #FFFFFF;
+    --header-font: "Quicksand", sans-serif;
+    --standard-font: "Mulish", sans-serif;
+    --nav-font: "Source Code Pro", monospace;
+    --japanese: "Yuji Boku", serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+    font-family: var(--standard-font);
+    text-decoration: none;
+}
+
+.japanese {
+    font-family: var(--japanese);
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center; 
+}
+
+header > a {
+    grid-column: 2;
+    justify-self: center;
+}
+
+main{
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+h1, h2{
+    font-family: var(--header-font);
+}
+
+.logo {
+    width: 180px;
+}
+
+
+
+header, footer{
+    background-color: var(--sakura);
+}
+
+.main-container {
+    align-items: center;
+    text-align: center;
+}
+
+.item-grid {
+    display: grid;
+    place-items: center;
+    margin: 20px;
+}
+
+section {
+    background-color: var(--custard);
+    border: 2px solid var(--onyx);
+    margin: 30px;
+    text-align: center;
+    width: 90%;
+}
+
+
+section div{
+    text-align: left;
+    padding: 6px;
+}
+
+section h2{
+    text-align: left;
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+section p
+{
+    font-family: var(--nav-font);
+    font-size: 15px;
+}
+
+.item-grid p .japanese
+{
+    font-size: 26px;
+}
+
+.delete{
+    text-align: right;
+}
+
+form {
+    display: grid;
+    place-items: center;
+    margin-bottom: 25px;
+}
+
+#japan::after {
+    font-family: var(--japanese);
+    content: 'Japan / 日本';
+    font-size: 26px;
+}
+#european:after{
+    font-family: var(--japanese);
+    content: 'Europe / ヨーロッパ';
+    font-size: 26px;
+}
+#georgia:after{
+    font-family: var(--japanese);
+    content: 'Georgia / ジョージア';
+    font-size: 26px;
+}
+#korea:after{
+    font-family: var(--japanese);
+    content: 'Korea / 韓国';
+    font-size: 26px;
+}
+#mongolia:after{
+    font-family: var(--japanese);
+    content: 'Mongolia / モンゴル';
+    font-size: 26px;
+}
+#taiwan:after{
+    font-family: var(--japanese);
+    content: 'Taiwan / 台湾';
+    font-size: 26px;
+}
+
+input[type="number"] {
+    background-color: var(--sakura);
+    border: 2px solid var(--onyx);
+    margin: 5px;
+    padding-left: 10px;
+    width: 2.5rem;
+    border-radius: 8px;
+    font-family: var(--nav-font);
+    
+}
+
+fieldset {
+    background-color: var(--custard);
+    border: 2px solid var(--onyx);
+    display: grid;
+    margin: 10px;
+    padding: 5px;
+    text-align:left;
+    width:max-content;
+}
+
+legend {
+    font-family: var(--japanese);
+    text-align: center;
+    font-size: 20px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px var(--sakura) inset !important;
+}
+
+select, input[type="text"], input[type="email"] {
+    background-color: var(--sakura);
+    border: 2px solid var(--onyx);
+    margin: 5px;
+    padding-left: 10px;
+    border-radius: 8px;
+    font-family: var(--nav-font);
+}
+
+
+select, button {
+    cursor: pointer;
+} 
+
+
+
+button {
+    background-color: var(--sakura);
+    border: 2px solid var(--onyx);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+
+button:hover{
+    background-color: var(--aqua);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media img{
+    width: 45px;
+    height: auto;
+    padding: 20px;
+}

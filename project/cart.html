@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="scripts/cart-page.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Asa Benson">
+    <meta name="description" content="WDD 131: Dynamic Web Fundamentals - Asa Benson: This is my index page for WWD 131 and contains some of my information.">
+    <link rel="stylesheet" href="styles/cart.css">
+    <link rel="stylesheet" href="styles/cart-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Yuji+Boku&display=swap" rel="stylesheet">
+    <title>Your Cart</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+    </header>
+    <main>
+
+    <div class="main-container">
+        <div> 
+            <h1>Your Cart</h1>
+        </div>
+        <div class="item-grid">
+            
+        </div>
+        <form id="checkout-form" method="get" action="review.html">
+        <fieldset>
+            <legend>Contact Info</legend>
+
+            <label>
+                Email
+                <input type="email" name="email" required autocomplete="email" placeholder=" ">
+            </label>
+            <label for="kuni">Choose a country:</label>
+            <select id="kuni" name="country" required autocomplete="off">
+                <option value="" disabled selected>Select a Country ...</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+            </select>
+            <label>
+                Address
+                <input type="text" name="address" placeholder=" " autocomplete="address-line1" required></input>
+            </label>
+            <label for="zip">ZIP/Postal Code:
+                <input type="text" id="zip" name="zip" autocomplete="postal-code" required>
+            </label>
+        </fieldset>
+        <button id="zenken-sakujo"><span class="japanese" title="ぜんけんさくじょ">全件削除 </span> / Delete All</button>
+        <button id="soushin-suru" type="submit">Submit Purchase</button>
+        </form>
+    </div>
+    
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Okashi Sweets, LLC</p>
+        <p><span id="lastModified"></span></p>
+        <span class="japanese">このお菓子は美味しそうですね。<span title="しょうひん">商品</span>の写真はどこにありますか？</span>
+        <div class="social-media">
+            <a href="https://bsky.app/"><img alt="butterfly" src="images/bluesky.svg"></a>
+            <a href="https://www.threads.com/"><img alt="thread" src="images/threads.svg"></a>
+            <a href="https://www.linkedin.com/"><img alt="linkedin" src="images/linkedin.svg"></a>
+        </div>
+    </footer>
+</body>
+</html>

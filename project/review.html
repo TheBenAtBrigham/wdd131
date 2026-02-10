@@ -1,54 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="scripts/main-page.js" defer></script>
+    <script src="scripts/review.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Asa Benson">
     <meta name="description" content="WDD 131: Dynamic Web Fundamentals - Asa Benson: This is my index page for WWD 131 and contains some of my information.">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/main-large.css">
+    <link rel="stylesheet" href="styles/review.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Yuji+Boku&display=swap" rel="stylesheet">
-    <title>Main Page</title>
+    <title>Your Review</title>
 </head>
 <body>
     <header>
         <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
-        
-        <div>
-            <button type="button" aria-label="Navigation Menu" id="menu"></button>
-        </div>
-        <div>
-            <a href="cart.html"><img src="images/cart.svg" alt="cart"></a>
-        </div>
     </header>
     <main>
-    <div class="sidebar">
-        
-        <ul>
-            <li><a href="#" id="all">All Items</a></li>
-            <hr>
-            <li><a href="#" id="candy">Candies</a></li>
-            <li><a href="#" id="confection" >Confections</a></li>
-            <li><a href="#" id="soda">Sodas</a></li>
-            <hr>
-            <li><a href="#" id="japan">Japanese</a></li>
-            <li><a href="#" id="european" >European</a></li>
-            <li><a href="#" id="miscellaneous">Misc.</a></li>
-        </ul>
-    </div>
+
     <div class="main-container">
-        <h1>Mise</h1>
-        <div class="item-grid">
+        <h1>Order Review</h1>
+
+        <div id="review-form">
+            <p>Thank you for your purchase!</p>
+            <p>You purchased <span id="review-count">0</span> items.</p>
+            <a href="index.html">Return back to the page? / <span title="メインページにもどる" class="japanese">メインページに戻る?</span>
+            </a>
         </div>
     </div>
     
     </main>
     <footer>
         <p>&copy;<span id="currentyear"></span> Okashi Sweets, LLC</p>
-        <span class="japanese">日本のお菓子を買って食べてみたいです。。。</span>
+        <span class="japanese">ありがとうございます！</span>
         <div class="social-media">
             <a href="https://bsky.app/"><img alt="butterfly" src="images/bluesky.svg"></a>
             <a href="https://www.threads.com/"><img alt="thread" src="images/threads.svg"></a>
