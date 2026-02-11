@@ -45,7 +45,7 @@ const products = [
         name: "Konpeitō",
         price: 3.30,
         category: "candy",
-        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Kompeito_konpeito.JPG/2560px-Kompeito_konpeito.JPG",
+        pic: "images/products/konpeito.jpg",
         maker : "Kasugai",
         country: "japan"
     },
@@ -54,7 +54,7 @@ const products = [
         name: "Warugaki Beer",
         price: 3.00,
         category: "candy",
-        pic: "https://www.sakurabox.com/cdn/shop/files/Warugaki_2.jpg?v=1723777853&width=802",
+        pic: "images/products/warugaki.webp",
         maker : "Kyoshin Seika",
         country: "japan"
     },
@@ -81,7 +81,7 @@ const products = [
         name: "Sarsaparilla",
         price: 2.00,
         category: "soda",
-        pic: "https://upload.wikimedia.org/wikipedia/en/a/a5/Sarsaparilla-Hey-Song-4294.jpg",
+        pic: "images/products/sarsi.jpg",
         maker : "HeySong",
         country: "taiwan"
     },
@@ -117,7 +117,7 @@ const products = [
         name: "Calpis",
         price: 3.00,
         category: "soda",
-        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Calpis_karupisu.JPG/500px-Calpis_karupisu.JPG",
+        pic: "images/products/karupisu.jpg",
         maker : "Asahi",
         country: "japan"
     },
@@ -468,7 +468,7 @@ const products = [
         name: "Tarkhuna",
         price: 5.00,
         category: "soda",
-        pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/%E9%BE%99%E8%92%BF%E6%B1%BD%E6%B0%B4.jpg/960px-%E9%BE%99%E8%92%BF%E6%B1%BD%E6%B0%B4.jpg",
+        pic: "tarkhuna",
         maker : "Natakhtari",
         country: "georgia"
     },
