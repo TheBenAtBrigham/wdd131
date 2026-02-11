@@ -468,7 +468,7 @@ const products = [
         name: "Tarkhuna",
         price: 5.00,
         category: "soda",
-        pic: "tarkhuna",
+        pic: "images/products/tarkhuna.jpg",
         maker : "Natakhtari",
         country: "georgia"
     },
