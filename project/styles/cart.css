@@ -137,6 +137,11 @@ form {
     content: 'Taiwan / 台湾';
     font-size: 26px;
 }
+#america:after{
+    font-family: var(--japanese);
+    content: 'U.S.A. / アメリカ / 米国';
+    font-size: 26px;
+}
 
 input[type="number"] {
     background-color: var(--sakura);
