@@ -231,11 +231,11 @@ const products = [
     },
     {
         id: "kohakutou",
-        name: "Kohakutou",
+        name: "Kohakutō",
         price: 3.00,
         category: "candy",
         pic: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRCl2_ti54hAAQ8-W6C1MWATfl1grrGfZ1sQ&s",
-        maker : "Kohakutou Okada",
+        maker : "Kohakutō Okada",
         country: "japan"
     },
     {
@@ -472,6 +472,42 @@ const products = [
         maker : "Natakhtari",
         country: "georgia"
     },
+    {
+        id: "sakura-mochi-keeki",
+        name: "Sakura Mochi Cakes",
+        price: 8.50,
+        category: "confection",
+        pic: "images/products/sakura-mochi-keeki.jpg",
+        maker : "Yamasan Kyōto",
+        country: "japan"
+    },
+    {
+        id: "botan-ame",
+        name: "Botan Rice Candy",
+        price: 8.50,
+        category: "candy",
+        pic: "https://www.auntiekcandy.com/cdn/shop/products/botan_rice_candy_1024x.jpg?v=1625525911",
+        maker : "Seika Foods",
+        country: "japan"
+    },
+    {
+        id: "wasabi-kitkat",
+        name: "Wasabi Kitkat",
+        price: 8.50,
+        category: "candy",
+        pic: "https://www.oddgifts.com/cdn/shop/products/51JbmkpjUmL.jpg?v=1554592097&width=1445",
+        maker : "Nestlé and Tamaruya Honten",
+        country: "japan"
+    },
+    {
+        id: "hawai-maneki-neko-gami",
+        name: "Enjoy Maneki-Neko",
+        price: 3.50,
+        category: "candy",
+        pic: "https://i.ebayimg.com/images/g/Nu0AAeSwfKxocaop/s-l1200.jpg",
+        maker : "Seika Foods",
+        country: "america"
+    },
 ]
 
 let shoppingCart = JSON.parse(localStorage.getItem("shoppingCart")) || [];
@@ -538,7 +574,7 @@ sodas.addEventListener("click", () => {
 
 const japan = document.getElementById("japan")
 japan.addEventListener("click", () => {
-    let nihon = products.filter(product => product.country === "japan" || product.id === "budou-jelly")
+    let nihon = products.filter(product => product.country === "japan" || product.id === "budou-jelly" || product.id === "hawai-maneki-neko-gami") 
     getList(nihon, "Japanese Products");
     hanbaagaaOTabetaida();
 })
@@ -603,6 +639,10 @@ function getList(list, headerOne){
         else if (entry.country === "georgia") {
             flag.setAttribute("src", "images/flags/georgia.webp")
             flag.setAttribute("title", "ジョージア / Georgia")
+        }
+        else if (entry.country === "america") {
+            flag.setAttribute("src", "images/flags/america.webp")
+            flag.setAttribute("title", "アメリカ / United States of America / 米国")
         }
         else {
             flag.setAttribute("src", "images/flags/nihon.webp")
