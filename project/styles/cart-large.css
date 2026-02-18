@@ -18,6 +18,10 @@
         top: 0
     }   
 
+    #european:after{
+        font-size: 26px;
+    }
+
     .social-media img{
         width: 20px;
         padding: 3px;

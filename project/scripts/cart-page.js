@@ -15,8 +15,24 @@ function capitalize(val) {
 
 const form = document.querySelector("form")
 form.addEventListener("submit", () => {
-    sessionStorage.setItem("justSubmitted", "true");
+    const cart = JSON.parse(localStorage.getItem("shoppingCart")) || [];
+    if (cart.length === 0) return;
+
+    const orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+    const newOrder = {
+        id: Date.now(),
+        date: new Date().toISOString(),
+        items: cart
+    };
+
+    orders.push(newOrder);
+
+    localStorage.setItem("orders", JSON.stringify(orders));
+
+
 })
+
 
 let shoppingCart = JSON.parse(localStorage.getItem("shoppingCart")) || [];
 
@@ -145,5 +161,3 @@ document.getElementById("zenken-sakujo").addEventListener("click", () => {
 
 
 displayShoppingCart(shoppingCart);
-
-//console.log(shoppingCart)

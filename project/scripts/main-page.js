@@ -74,7 +74,7 @@ const products = [
         category: "candy",
         pic: "https://m.media-amazon.com/images/I/61uxd6X4VyL.jpg",
         maker : "Maynard Bassetts",
-        country: "european"
+        country: "britain"
     },
     {
         id: "heysongsars",
@@ -155,7 +155,7 @@ const products = [
         category: "soda",
         pic: "https://www.britishfoodshop.com/cdn/shop/products/100702_2048x.jpg?v=1633395159",
         maker : "A.G. Barr",
-        country: "european"
+        country: "britain"
     },
     {
         id: "Sanshoku",
@@ -398,7 +398,7 @@ const products = [
         category: "candy",
         pic: "https://i5.walmartimages.com/asr/cffb8ddb-4067-4e74-801c-49a8c290c03a.caf81be979713bfd8356b1421e6782fb.jpeg",
         maker : "Swizzel's",
-        country: "european"
+        country: "britain"
     },
     {
         id: "fanta-toropikaru",
@@ -452,7 +452,7 @@ const products = [
         category: "soda",
         pic: "https://www.sodapoponline.com/cdn/shop/products/leninadesoda_600x.jpg?v=1611077424",
         maker : "Real Soda In Real Bottles",
-        country: "european"
+        country: "britain"
     },
     {
         id: "garigarikun-sooda",
@@ -507,6 +507,42 @@ const products = [
         pic: "https://i.ebayimg.com/images/g/Nu0AAeSwfKxocaop/s-l1200.jpg",
         maker : "Seika Foods",
         country: "america"
+    },
+    {
+        id: "red-sting",
+        name: "Red Sting Energy",
+        price: 3.50,
+        category: "soda",
+        pic: "images/products/sting-red.png",
+        maker : "Rockstar Inc.",
+        country: "vietnam"
+    },
+    {
+        id: "saxi-chuong-duong",
+        name: "Sáxị Chương Dương",
+        price: 3.50,
+        category: "soda",
+        pic: "images/products/saxi.webp",
+        maker : "Chuong Duong Beverages JSC",
+        country: "vietnam"
+    },
+    {
+        id: "pakku-man-gami",
+        name: "Pac-Man Gummies",
+        price: 3.50,
+        category: "candy",
+        pic: "images/products/pakku-man-gami.webp",
+        maker : "Gummytec",
+        country: "european"
+    },
+    {
+        id: "tetorisu-gami",
+        name: "Tetris Gummies",
+        price: 3.50,
+        category: "candy",
+        pic: "images/products/tetris-gummy.jpg",
+        maker : "UHA Mikakuto",
+        country: "japan"
     },
 ]
 
@@ -581,7 +617,7 @@ japan.addEventListener("click", () => {
 
 const europeanCountries = document.getElementById("european")
 europeanCountries.addEventListener("click", () => {
-    let yōroppaShokoku = products.filter(product => product.country === "european" || product.country === "georgia")
+    let yōroppaShokoku = products.filter(product => product.country === "european" || product.country === "georgia" || product.country === "britain")
     getList(yōroppaShokoku, "European Products");
     hanbaagaaOTabetaida();
 })
@@ -589,7 +625,7 @@ europeanCountries.addEventListener("click", () => {
 
 const miscellaneous = document.getElementById("miscellaneous")
 miscellaneous.addEventListener("click", () => {
-    let sonota = products.filter(product => !product.country.includes("japan") && !product.country.includes("european"))
+    let sonota = products.filter(product => !product.country.includes("japan") && !product.country.includes("european") && !product.country.includes("britain") && !product.country.includes("georgia"))
     getList(sonota, "Products of Miscellaneous Origin");
     hanbaagaaOTabetaida();
 })
@@ -643,6 +679,14 @@ function getList(list, headerOne){
         else if (entry.country === "america") {
             flag.setAttribute("src", "images/flags/america.webp")
             flag.setAttribute("title", "アメリカ / United States of America / 米国")
+        }
+        else if (entry.country === "britain") {
+            flag.setAttribute("src", "images/flags/britain.webp")
+            flag.setAttribute("title", "英吉利 (イギリス) / United Kingdom of Great Britain and Northern Ireland / 英国")
+        }
+        else if (entry.country === "vietnam") {
+            flag.setAttribute("src", "images/flags/vietnam.webp")
+            flag.setAttribute("title", "ベトナム / Vietnam")
         }
         else {
             flag.setAttribute("src", "images/flags/nihon.webp")

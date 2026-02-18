@@ -54,7 +54,6 @@ header > div:last-child {
     cursor: pointer;
 }
 
-
 #menu::before {content: "☰";}
 #menu.open::before{content: "X";}
 
@@ -177,8 +176,12 @@ a{
     padding: 1rem;
 }
 
+.sidebar ul .line {
+    border-bottom: 2px solid var(--onyx);
+    padding: 0px;
+}
 
-.sidebar ul li:hover {
+.sidebar ul li:hover{
     background-color: var(--onyx);
 }
 
@@ -223,9 +226,7 @@ section div {
     width: 100%;
     
 }
-hr {
-    border: none;
-}
+
 .category
 {
     width: 20px;

@@ -42,13 +42,13 @@
             </select>
             <label>
                 Address
-                <input type="text" name="address" placeholder=" " autocomplete="address-line1" required></input>
+                <input type="text" name="address" placeholder="Enter Address Here" autocomplete="address-line1" required>
             </label>
             <label for="zip">ZIP/Postal Code:
                 <input type="text" id="zip" name="zip" autocomplete="postal-code" required>
             </label>
         </fieldset>
-        <button id="zenken-sakujo"><span class="japanese" title="ぜんけんさくじょ">全件削除 </span> / Delete All</button>
+        <button id="zenken-sakujo" type="button"><span class="japanese" title="ぜんけんさくじょ">全件削除 </span> / Delete All</button>
         <button id="soushin-suru" type="submit">Submit Purchase</button>
         </form>
     </div>
@@ -59,9 +59,9 @@
         <p><span id="lastModified"></span></p>
         <span class="japanese">このお菓子は美味しそうですね。<span title="しょうひん">商品</span>の写真はどこにありますか？</span>
         <div class="social-media">
-            <a href="https://bsky.app/"><img alt="butterfly" src="images/bluesky.svg"></a>
-            <a href="https://www.threads.com/"><img alt="thread" src="images/threads.svg"></a>
-            <a href="https://www.linkedin.com/"><img alt="linkedin" src="images/linkedin.svg"></a>
+            <a href="https://bsky.app/" aria-label="Bluesky"><img alt="butterfly" src="images/bluesky.svg"></a>
+            <a href="https://www.threads.com/" aria-label="Threads"><img alt="thread" src="images/threads.svg"></a>
+            <a href="https://www.linkedin.com/" aria-label="LinkedIn"><img alt="linkedin" src="images/linkedin.svg"></a>
         </div>
     </footer>
 </body>

@@ -114,8 +114,8 @@ form {
 }
 #european:after{
     font-family: var(--japanese);
-    content: 'Europe / ヨーロッパ';
-    font-size: 26px;
+    content: 'European Union / ヨーロッパ連合 / 欧州連合 '; /*おうしゅうれんごう*/
+    font-size: 18px;
 }
 #georgia:after{
     font-family: var(--japanese);
@@ -143,6 +143,18 @@ form {
     font-size: 26px;
 }
 
+#britain:after{
+    font-family: var(--japanese);
+    content: 'U.K. / イギリス / 英国';
+    font-size: 26px;
+}
+
+#vietnam:after{
+    font-family: var(--japanese);
+    content: 'Vietnam / ベトナム';
+    font-size: 26px;
+}
+
 input[type="number"] {
     background-color: var(--sakura);
     border: 2px solid var(--onyx);
@@ -152,6 +164,9 @@ input[type="number"] {
     border-radius: 8px;
     font-family: var(--nav-font);
     
+}
+input::placeholder{
+   color: var(--onyx);
 }
 
 fieldset {
